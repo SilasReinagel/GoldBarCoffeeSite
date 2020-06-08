@@ -29,4 +29,4 @@
     <h1>Welcome to {company}</h1>
     <p>The choice of the connoisseur since 1994</p>
   </div>
-</div> 
+</div>
