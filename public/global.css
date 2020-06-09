@@ -1,6 +1,11 @@
 :root {
   --primary-color: #fff;
   --primary-color-interact: #c7a17a;
+  --primary-background-color: #151412;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -33,4 +38,9 @@ p {
   font-size: 14px;
   color: #9c9c9b;
   line-height: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

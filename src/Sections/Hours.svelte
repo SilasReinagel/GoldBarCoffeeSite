@@ -42,7 +42,7 @@
 
   section {
     padding: 2.4em 1.8em 3em 1.8em;
-    width: calc(100% - 3.6em - 4px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;    

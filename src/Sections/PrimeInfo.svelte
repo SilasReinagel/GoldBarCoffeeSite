@@ -41,11 +41,6 @@
     font-size: 1.4em;
   }
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   .img-box {
     border: 2px #fff solid;
   }
