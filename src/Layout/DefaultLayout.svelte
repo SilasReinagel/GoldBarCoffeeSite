@@ -3,6 +3,7 @@
 
   import SiteHeader from './Header/SiteHeader.svelte';
   import SiteFooter from './Footer/SiteFooter.svelte';
+  import CompanyFooter from './CompanyFooter.svelte';
 </script>
 
 <style>
@@ -11,9 +12,10 @@
   }
 </style>
 
-<SiteHeader company={company} />
+<SiteHeader company={company.name} />
 <section>
-  <slot>Content goes here.</slot>
+  <slot/>
 </section>
+<CompanyFooter company={company} />
 <SiteFooter company={company} />
 

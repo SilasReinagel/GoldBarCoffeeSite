@@ -1,7 +1,10 @@
 :root {
   --primary-color: #fff;
-  --primary-color-interact: #c7a17a;
   --primary-background-color: #151412;
+  --secondary-background-color: #212121;
+  --secondary-color: #c7a17a;
+  --secondary-color-hover: #a27863;
+  --secondary-color-press: #261205;
 }
 
 * {
@@ -18,7 +21,7 @@
   src: url('/fonts/OpenSans-Regular.ttf')  format('truetype');
 }
 
-html, body, a, p  {
+html, body, a  {
   font-size: 18px;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
@@ -31,10 +34,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  transition-duration: 0.1s;
   text-decoration: none;
 }
 
+a,
+a:visited {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--secondary-color-hover);
+}
+
+a:active {
+  color: var(--secondary-color-press);
+}
+
 p {
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   color: #9c9c9b;
   line-height: 24px;

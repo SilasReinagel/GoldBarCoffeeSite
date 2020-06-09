@@ -67,14 +67,6 @@
     justify-content: space-evenly;
   }
 
-  .placeholder {
-    max-width: 600px;
-    width: 440px;
-    height: 440px;
-    background-color: magenta;
-    margin: 1em;
-  }
-
   .column {
     max-width: 440px;
     width: 440px;

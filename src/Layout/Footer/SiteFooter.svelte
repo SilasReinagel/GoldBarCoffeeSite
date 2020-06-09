@@ -1,35 +1,41 @@
 <script>
   export let company;
+
   const year = new Date().getFullYear();
 </script>
 
 <footer>
-  <span>© {year} {company}</span>
+  <span>© {year} {company.name}</span>
 
-  <ul class="social-links">
-    <a class="social-icon yelp-red" href="http://www.yelp.com/biz/gold-bar-espresso-tempe" target=”_blank”>
+  <div class="social-links">
+    <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
       <img src="/images/yelp.svg"/>
     </a>
-    <a class="social-icon facebook-blue" href="http://www.facebook.com/pages/Gold-Bar-Espresso/46920370784" target=”_blank”>
+    <a class="social-icon facebook-blue" href={company.social.facebook} target=”_blank”>
       <img src="/images/facebook.svg"/>
     </a>
-    <a class="social-icon twitter-blue" href="https://twitter.com/#!/GoldBarEspresso" target=”_blank”>
+    <a class="social-icon twitter-blue" href={company.social.twitter} target=”_blank”>
       <img src="/images/twitter.svg"/>
     </a>
-  </ul>
+  </div>
 
   <span class="small-text">Website by: <a href="http://www.silasreinagel.com">Silas Reinagel</a></span>
 </footer>
 
 <style>
+  a {
+    font-size: 1em;
+  }
+
   footer {
     padding: 12px 18px;
+    height: 88px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    background-color: rgba(21, 20, 18, 1);
+    background-color: #000;
     font-size: 0.8em;
   }
 
