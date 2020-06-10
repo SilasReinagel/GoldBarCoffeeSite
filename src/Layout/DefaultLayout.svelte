@@ -1,8 +1,8 @@
 <script>
   export let company;
 
-  import SiteHeader from './Header/SiteHeader.svelte';
-  import SiteFooter from './Footer/SiteFooter.svelte';
+  import SiteHeader from './SiteHeader.svelte';
+  import SiteFooter from './SiteFooter.svelte';
   import CompanyFooter from './CompanyFooter.svelte';
 </script>
 

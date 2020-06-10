@@ -1,15 +1,17 @@
 <script>
   export let company;
+
+  import RouteLink from '../Routing/RouteLink.svelte';
 </script>
 
 <header>
   <a href="."><h1>{company}</h1></a>
-  <ul class="navbar">
-    <li><a href=".">Home</a></li>
-    <li><a href=".">Menu</a></li>
-    <li><a href=".">About Us</a></li>
-    <li><a href=".">Contact Us</a></li>
-  </ul>
+  <nav class="navbar">
+    <RouteLink class="navlink" href="/">Home</RouteLink>
+    <RouteLink class="navlink" href="/menu">Menu</RouteLink>
+    <RouteLink class="navlink" href="/about">About Us</RouteLink>
+    <RouteLink class="navlink" href="/contact">Contact Us</RouteLink>
+  </nav>
 </header>
 
 <style>
@@ -28,15 +30,20 @@
   h1 {
     margin: 10px;
   }
-
-  .a {
-    font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
-  }
-
   ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+  }
+
+  .navlink {
+    margin: 5px 15px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
   li a {

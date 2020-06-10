@@ -17,7 +17,7 @@
 </script>
 
 <div class="swiper-container">
-  <div class="swiper-wrapper">  
+  <div class="swiper-wrapper">
     <div class="swiper-slide"><img src="/images/cafe-entrance-01.jpg"/></div>
     <div class="swiper-slide"><img src="/images/live-jazz-01.jpg"/></div>
     <div class="swiper-slide"><img src="/images/cafe-01.jpg"/></div>

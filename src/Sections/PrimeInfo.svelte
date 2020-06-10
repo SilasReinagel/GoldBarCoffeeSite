@@ -17,18 +17,18 @@
         </div>
         <h4>Rest, Relax & Revive!</h4>
         <p>At Gold Bar Espresso people from all around come to rest, relax, and revive with great coffee, great company, great music, and great food!</p>
-        <p>We import our coffees exclusively from the most fertile and renowned coffee-growing regions on earth. 
+        <p>We import our coffees exclusively from the most fertile and renowned coffee-growing regions on earth.
           Our estate-grown varietals are hand-selected by our Roast Master for their taste, balance and uniformity.</p>
         <div class="icon-box"><img src="/icons/free-wifi.png" alt="Free Wifi"/></div>
       </div>
       <div class="column">
         <div class="img-box">
-          <img src="/images/live-jazz-01.jpg" alt="Live jazz music" /> 
+          <img src="/images/live-jazz-01.jpg" alt="Live jazz music" />
         </div>
         <h4>Live Music Every Weekend!</h4>
         <p>Straight ahead, acoustic, the sounds of Miles, Coltrane, Monk, and so many more. Friday and Sunday nights begining at 7:30 PM.</p>
         <p>The hot sounds of guitar, bass, sax and vibraphone fill the night on the weekends at Gold Bar Espresso. Jazz Alliance is here to stay!</p>
-        <p>Need a little head space? Sunday mornings finds Scott Anderson and classical guitar. 
+        <p>Need a little head space? Sunday mornings finds Scott Anderson and classical guitar.
           Just the ticket for meditative thoughts, writing, or chilling out! Join Scott from 9-11 AM.</p>
       </div>
       <div class="column"><Hours phone={phone}/></div>

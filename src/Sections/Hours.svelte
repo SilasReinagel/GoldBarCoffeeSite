@@ -45,7 +45,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
     border: 2px #fff solid;
     height: auto;
     background-image: url("/images/drink-01-greyscale.jpg");

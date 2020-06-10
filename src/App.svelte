@@ -1,17 +1,14 @@
 <script>
-	export let company;
+	import company from './static-content.js';
 
 	import DefaultLayout from './Layout/DefaultLayout.svelte';
-	import Hero from './Sections/Hero.svelte';
-	import PrimeInfo from './Sections/PrimeInfo.svelte';
-	import PhotoSlider from './Sections/PhotoSlider.svelte';
+	import Home from './Pages/Home.svelte';
+	import Router from './Routing/Router.svelte';
 </script>
 
 <main>
 	<DefaultLayout company={company}>
-		<Hero company={company.name}/>
-		<PrimeInfo company={company.name} phone={company.phone}/>
-		<PhotoSlider/>	
+		<Router />
 	</DefaultLayout>
 </main>
 

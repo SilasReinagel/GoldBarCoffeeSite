@@ -4,7 +4,7 @@
   import Container from '../Elements/Container.svelte';
 </script>
 
-<section>  
+<section>
   <Container>
     <div class="mobile-three-column-layout">
       <div class="column">
@@ -38,7 +38,7 @@
       </div>
 
     </div>
-    
+
   </Container>
 </section>
 
