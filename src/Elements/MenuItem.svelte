@@ -19,9 +19,8 @@
 
   h4 {
     margin-bottom: 0px;
+    margin-top: 0.7em;
   }
-
-
 
   .description {
     color: #888;
