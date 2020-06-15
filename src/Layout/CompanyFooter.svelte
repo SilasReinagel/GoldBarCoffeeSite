@@ -21,24 +21,22 @@
       </div>
       <div class="column vertical">
         <h2>Social & Web</h2>
-        <a href={company.social.yelp}><img class="yelp" src="/images/yelp-rectangle.png"/></a>
+        <a href={company.social.yelp}><img class="yelp" src="/images/yelp-rectangle.png" alt="Yelp Icon"/></a>
         <div>
-          <a href={company.social.facebook}><img class="facebook" src="/icons/facebook-square.svg"/></a>
-          <a href={company.social.twitter}><img class="twitter" src="/icons/twitter-square.svg"/></a>
+          <a href={company.social.facebook}><img class="facebook" src="/icons/facebook-square.svg" alt="Facebook Icon"/></a>
+          <a href={company.social.twitter}><img class="twitter" src="/icons/twitter-square.svg" img="Twitter Icon"/></a>
         </div>
         <hr/>
       </div>
       <div class="column vertical">
         <h2>Navigation</h2>
-        <a class="nav-link" href=".">Home</a>
-        <a class="nav-link" href=".">Menu</a>
-        <a class="nav-link" href=".">About Us</a>
-        <a class="nav-link" href=".">Contact</a>
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/index.html?page=menu">Menu</a>
+        <a class="nav-link" href="/index.html?page=about">About Us</a>
+        <a class="nav-link" href="/index.html?page=contact">Contact</a>
         <hr/>
       </div>
-
     </div>
-
   </Container>
 </section>
 
