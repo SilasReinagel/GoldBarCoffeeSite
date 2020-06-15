@@ -8,9 +8,9 @@
   <a href="."><h1>{company}</h1></a>
   <nav class="navbar">
     <RouteLink class="navlink" href="/">Home</RouteLink>
-    <RouteLink class="navlink" href="/menu">Menu</RouteLink>
-    <RouteLink class="navlink" href="/about">About Us</RouteLink>
-    <RouteLink class="navlink" href="/contact">Contact Us</RouteLink>
+    <RouteLink class="navlink" href="index.html?page=menu">Menu</RouteLink>
+    <RouteLink class="navlink" href="index.html?page=about">About Us</RouteLink>
+    <RouteLink class="navlink" href="index.html?page=contact">Contact Us</RouteLink>
   </nav>
 </header>
 

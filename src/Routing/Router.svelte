@@ -1,13 +1,11 @@
 <script>
   import { onDestroy } from 'svelte';
-  import { currentRoute } from '../store';
   import routes from '../routes';
 
-  let component;
-  const unsubscribe = currentRoute.subscribe(value => {
-    component = routes.filter(r => r.path.toLocaleLowerCase() === ($currentRoute).toLocaleLowerCase())[0].component;
-  })
-  onDestroy(unsubscribe);
+  const page = '/' + (new URLSearchParams(window.location.search).get('page') || '');
+  const matchingRoutes = routes.filter(r => r.path.toLocaleLowerCase() === (page).toLocaleLowerCase());
+  // TODO: Handle Not Found Page
+  const component = matchingRoutes[0].component;
 </script>
 
 <style>
