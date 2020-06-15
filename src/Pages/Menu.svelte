@@ -8,7 +8,7 @@
 </script>
 
 <section>
-  <PageHeaderImage src="/images/cafe-01.jpg" alt="Cafe"/>
+  <PageHeaderImage src="/images/header-cafe-04.jpg" alt="Cafe"/>
   <div class="bg-color">
     <DividerWithText text="Coffee & Drinks Menu" />
   </div>

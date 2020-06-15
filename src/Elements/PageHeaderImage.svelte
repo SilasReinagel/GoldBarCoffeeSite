@@ -10,6 +10,8 @@
 <style>
   div {
     width: 100vw;
-    height: 340px;
+    height: 300px;
+    overflow: hidden;
+    vertical-align: middle;
   }
 </style>
