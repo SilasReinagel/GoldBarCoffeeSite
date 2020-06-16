@@ -74,7 +74,7 @@
   }
 
   .logo {
-    width: 440px;
+    width: 360px;
     max-width: 80vw;
     height: auto;
   }

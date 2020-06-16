@@ -16,15 +16,18 @@
 <style>
   .row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 1.5em 0 8em 0;
   }
 
   .column {
-    flex: 50%;
+    max-width: 80vw;
+    width: 440px;
     display: flex;
     flex-direction: column;
-    padding: 1.2em;
-    margin: 0px 32px;
+    margin: 0px 2em;
   }
 
   @media screen and (max-width: 600px) {

@@ -68,7 +68,7 @@
   }
 
   .column {
-    max-width: 440px;
+    max-width: 80vw;
     width: 440px;
     margin: 1em;
   }

@@ -8,10 +8,10 @@
 <header>
   <a href="."><h1>{company}</h1></a>
   <nav class="navbar">
-    <a class="navlink" href="/"><CoffeeIcon height='0.8em' width='0.8em' />Home</a>
-    <a class="navlink" href="index.html?page=menu"><CoffeeIcon height='0.8em' width='0.8em' />Menu</a>
-    <a class="navlink" href="index.html?page=about"><CoffeeIcon height='0.8em' width='0.8em' />About Us</a>
-    <a class="navlink" href="index.html?page=contact"><CoffeeIcon height='0.8em' width='0.8em' />Contact Us</a>
+    <a class="navlink" href="/"><CoffeeIcon height='1em' width='1em' />Home</a>
+    <a class="navlink" href="index.html?page=menu"><CoffeeIcon height='1em' width='1em' />Menu</a>
+    <a class="navlink" href="index.html?page=about"><CoffeeIcon height='1em' width='1em' />About Us</a>
+    <a class="navlink" href="index.html?page=contact"><CoffeeIcon height='1em' width='1em' />Contact Us</a>
   </nav>
 </header>
 

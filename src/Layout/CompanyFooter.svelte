@@ -24,7 +24,7 @@
         <a href={company.social.yelp}><img class="yelp" src="/images/yelp-rectangle.png" alt="Yelp Icon"/></a>
         <div>
           <a href={company.social.facebook}><img class="facebook" src="/icons/facebook-square.svg" alt="Facebook Icon"/></a>
-          <a href={company.social.twitter}><img class="twitter" src="/icons/twitter-square.svg" img="Twitter Icon"/></a>
+          <a href={company.social.twitter}><img class="twitter" src="/icons/twitter-square.svg" alt="Twitter Icon"/></a>
         </div>
         <hr/>
       </div>

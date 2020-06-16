@@ -29,7 +29,7 @@
 
   footer {
     padding: 12px 18px;
-    height: 88px;
+    height: 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,6 +37,10 @@
     align-items: center;
     background-color: #000;
     font-size: 0.8em;
+  }
+
+  span {
+    font-size: 0.9em;
   }
 
   .small-text {
@@ -55,7 +59,7 @@
 
   .social-icon img {
     filter: invert(.5) brightness(3);
-    width: 20px;
+    width: 1.2em;
     height: auto;
   }
 
@@ -73,6 +77,12 @@
 
   .yelp-red img:hover {
     filter: brightness(0.4) sepia(1) hue-rotate(300deg) saturate(8);
+  }
+
+  @media screen and (max-width: 600px) {
+    .social-links {
+      display: none;
+    }
   }
 
 </style>

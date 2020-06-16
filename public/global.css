@@ -69,3 +69,31 @@ img {
   width: 100%;
   height: auto;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .highres,
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+}
