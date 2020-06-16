@@ -1,9 +1,9 @@
 <script>
-  export let company;
-
   import SiteHeader from './SiteHeader.svelte';
   import SiteFooter from './SiteFooter.svelte';
   import CompanyFooter from './CompanyFooter.svelte';
+
+  import company from '../static-content.js';
 </script>
 
 <style>
@@ -12,7 +12,7 @@
   }
 </style>
 
-<SiteHeader company={company.name} />
+<SiteHeader/>
 <section>
   <slot/>
 </section>

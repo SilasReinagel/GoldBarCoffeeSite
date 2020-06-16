@@ -93,6 +93,29 @@ img {
   }
 }
 
+.tablet {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  html, body {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .highres,
+  .tablet-hidden {
+    display: none;
+  }
+}
+
 html {
   visibility: visible;
   opacity: 1;

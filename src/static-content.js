@@ -18,6 +18,14 @@ export default ({
   }
 });
 
+const page = (href, name) => ({ href, name });
+export const pages = [
+  page('/', 'Home'),
+  page('index.html?page=menu', 'Menu'),
+  page('index.html?page=about', 'About Us'),
+  page('index.html?page=contact', 'Contact Us')
+];
+
 const format = (v) => v > 0 ? '$' + v.toFixed(2) : '';
 const hotDrinkPrices = (short, tall, grande, uber) => ({ short, tall, grande, uber, toString: () => `${format(short)} / ${format(tall)} / ${format(grande)} / ${format(uber)}` });
 const coldDrinkPrices = (short, grande, uber) => ({ short, grande, uber, toString: () => `${format(short)} / ${format(grande)} / ${format(uber)}` });

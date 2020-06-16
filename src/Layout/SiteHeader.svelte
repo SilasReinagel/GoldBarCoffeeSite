@@ -1,17 +1,22 @@
 <script>
-  export let company;
+  let sidebarOpen = false;
 
   import CoffeeIcon from '../Elements/CoffeeIcon.svelte';
+  import HamburgerIcon from '../Elements/HamburgerIcon.svelte';
+  import SiteSidebar from './SiteSidebar.svelte';
+
+  import company, { pages } from '../static-content.js';
 </script>
 
 <header>
-  <a href="."><h1>{company}</h1></a>
-  <nav class="navbar">
-    <a class="navlink" href="/"><CoffeeIcon height='1em' width='1em' />Home</a>
-    <a class="navlink" href="index.html?page=menu"><CoffeeIcon height='1em' width='1em' />Menu</a>
-    <a class="navlink" href="index.html?page=about"><CoffeeIcon height='1em' width='1em' />About Us</a>
-    <a class="navlink" href="index.html?page=contact"><CoffeeIcon height='1em' width='1em' />Contact Us</a>
+  <a href="."><h1>{company.name}</h1></a>
+  <SiteSidebar bind:open={sidebarOpen}/>
+  <nav class="navbar tablet-hidden">
+    {#each pages as page}
+      <a class="navlink" href={page.href}><CoffeeIcon height='1em' width='1em' />{page.name}</a>
+    {/each}
   </nav>
+  <HamburgerIcon bind:open={sidebarOpen}/>
 </header>
 
 <style>
@@ -44,6 +49,7 @@
   }
 
   .navlink:hover {
-    filter: sepia(1) brightness(0.7) hue-rotate(315deg) saturate(4);
+    filter: brightness(0) saturate(100%) invert(81%) sepia(6%) saturate(2751%) hue-rotate(341deg) brightness(88%) contrast(74%);
   }
+
 </style>
