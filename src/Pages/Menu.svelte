@@ -1,42 +1,35 @@
 <script>
-  import DividerWithText from '../Elements/DividerWithText.svelte';
   import MenuItem from '../Elements/MenuItem.svelte';
-  import PageHeaderImage from '../Elements/PageHeaderImage.svelte';
   import TwoColumnLayout from '../Elements/TwoColumnLayout.svelte';
+  import StandardPageLayout from '../Elements/StandardPageLayout.svelte';
 
   import { menu } from '../static-content';
 </script>
 
-<section>
-  <PageHeaderImage src="/images/cafe-04.jpg" alt="Cafe"/>
-  <div class="bg-color">
-    <DividerWithText text="Coffee & Drinks Menu" />
-  </div>
-  <div class="menu">
-    <TwoColumnLayout>
-      <div slot="first">
-        <div class="row-space-between">
-          <h2>Hot Drinks</h2>
-          <h4>12oz / 16oz / 20oz / 24oz</h4>
-        </div>
-        <hr/>
-        {#each menu.hotDrinks as drink}
-          <MenuItem item={drink} />
-        {/each}
+<StandardPageLayout title="Coffee & Drinks Menu" headerImg="/images/cafe-04.jpg" alt="Cafe">
+  <TwoColumnLayout>
+    <div slot="first">
+      <div class="row-space-between">
+        <h2>Hot Drinks</h2>
+        <h4>12oz / 16oz / 20oz / 24oz</h4>
       </div>
-      <div slot="second">
-        <div class="row-space-between">
-          <h2>Cold Drinks</h2>
-          <h4>12oz / 20oz / 24oz</h4>
-        </div>
-        <hr/>
-        {#each menu.coldDrinks as drink}
-          <MenuItem item={drink} />
-        {/each}
+      <hr/>
+      {#each menu.hotDrinks as drink}
+        <MenuItem item={drink} />
+      {/each}
+    </div>
+    <div slot="second">
+      <div class="row-space-between">
+        <h2>Cold Drinks</h2>
+        <h4>12oz / 20oz / 24oz</h4>
       </div>
-    </TwoColumnLayout>
-  </div>
-</section>
+      <hr/>
+      {#each menu.coldDrinks as drink}
+        <MenuItem item={drink} />
+      {/each}
+    </div>
+  </TwoColumnLayout>
+</StandardPageLayout>
 
 <style>
   h2 {

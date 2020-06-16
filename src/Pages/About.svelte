@@ -1,56 +1,41 @@
 <script>
-  import DividerWithText from '../Elements/DividerWithText.svelte';
-  import PageHeaderImage from '../Elements/PageHeaderImage.svelte';
   import TwoColumnLayout from '../Elements/TwoColumnLayout.svelte';
+  import StandardPageLayout from '../Elements/StandardPageLayout.svelte';
 
   import company from '../static-content';
 </script>
 
-<section>
-  <PageHeaderImage src="/images/cafe-01.jpg" alt="Cafe"/>
-  <div class="bg-color">
-    <DividerWithText text="About" />
-  </div>
-  <section>
-    <TwoColumnLayout>
-      <div class='center-vertically' slot='first'>
-        <img class="logo" src={company.logo} alt="{company.name} Logo" />
-      </div>
-      <div slot='second'>
-        <h1>{company.name}</h1>
-        <p><b>{company.name}</b> is located in Tempe, AZ, at the NE Corner of McClintock and Southern.</p>
-        <p class='quote decor-font'>Choice of the Connoisseur</p>
-        <p>{company.name} is a family owned and operated coffee shop which is centered around its community. Live jazz, game nights, 
-          and the cozy, homey interior all provide you with the personal warmth and connection you are longing for. 
-        <p>The carefully selected, high-quality coffees, teas, and specialty mochas seal the deal with beverages that satifsy even 
-          the most discerning customers.</p>
-        <p>Come on in and have a drink with us today...</p>
+<StandardPageLayout title="About" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
+  <TwoColumnLayout>
+    <div class='center-vertically' slot='first'>
+      <img class="logo" src={company.logo} alt="{company.name} Logo" />
+    </div>
+    <div slot='second'>
+      <h1>{company.name}</h1>
+      <p><b>{company.name}</b> is located in Tempe, AZ, at the NE Corner of McClintock and Southern.</p>
+      <p class='quote decor-font'>Choice of the Connoisseur</p>
+      <p>{company.name} is a family owned and operated coffee shop which is centered around its community. Live jazz, game nights, 
+        and the cozy, homey interior all provide you with the personal warmth and connection you are longing for. 
+      <p>The carefully selected, high-quality coffees, teas, and specialty mochas seal the deal with beverages that satifsy even 
+        the most discerning customers.</p>
+      <p>Come on in and have a drink with us today...</p>
 
-        <div class="social-links">
-          <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
-            <img src="/images/yelp.svg" alt="Yelp Icon"/>
-          </a>
-          <a class="social-icon facebook-blue" href={company.social.facebook} target=”_blank”>
-            <img src="/images/facebook.svg" alt="Facebook Icon"/>
-          </a>
-          <a class="social-icon twitter-blue" href={company.social.twitter} target=”_blank”>
-            <img src="/images/twitter.svg" alt="Twitter Icon"/>
-          </a>
-        </div>
+      <div class="social-links">
+        <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
+          <img src="/images/yelp.svg" alt="Yelp Icon"/>
+        </a>
+        <a class="social-icon facebook-blue" href={company.social.facebook} target=”_blank”>
+          <img src="/images/facebook.svg" alt="Facebook Icon"/>
+        </a>
+        <a class="social-icon twitter-blue" href={company.social.twitter} target=”_blank”>
+          <img src="/images/twitter.svg" alt="Twitter Icon"/>
+        </a>
       </div>
-    </TwoColumnLayout>
-  </section>
-</section>
+    </div>
+  </TwoColumnLayout>
+</StandardPageLayout>
 
 <style>
-  section {
-    background-color: #fff;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
   .center-vertically {
     display: flex;
     justify-content: center;
@@ -66,11 +51,6 @@
     color: var(--alternate-color-light);
     font-size: 1.1em;
     line-height: 1.3em;
-  }
-
-  .bg-color {
-    background-color: var(--alternate-color);
-    padding: 1em;
   }
 
   .logo {

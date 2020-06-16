@@ -1,7 +1,6 @@
 <script>
   export let company;
 
-  import RouteLink from '../Routing/RouteLink.svelte';
   import CoffeeIcon from '../Elements/CoffeeIcon.svelte';
 </script>
 

@@ -13,7 +13,7 @@
         <p>{company.address.line1}
           <br>{company.address.city}, {company.address.state}, {company.address.zip5}
           <br>Phone: {company.phone}
-          <br>Map: <a href={company.address.mapLink}>Google Maps</a></p>
+          <br>Map: <a href={company.address.mapLink}>MapQuest</a></p>
         <hr/>
         <div class="logo-box">
           <img src={company.logo} alt="{company.name} Logo" />

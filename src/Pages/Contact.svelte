@@ -1,18 +1,11 @@
 <script>
-  import DividerWithText from '../Elements/DividerWithText.svelte';
   import TwoColumnLayout from '../Elements/TwoColumnLayout.svelte';
-  import PageHeaderImage from '../Elements/PageHeaderImage.svelte';
+  import StandardPageLayout from '../Elements/StandardPageLayout.svelte';
 
   import company from '../static-content';
-  console.log(company.address);
-  console.log(company.address.toString());
 </script>
 
-<section>
-  <PageHeaderImage src="/images/cafe-01.jpg" alt="Cafe"/>
-  <div class="bg-color">
-    <DividerWithText text="Contact" />
-  </div>
+<StandardPageLayout title="Contact" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
   <TwoColumnLayout>
     <form class="email-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" slot='first'>
       <h2>Contact Us</h2>
@@ -36,7 +29,7 @@
         <div class="address">
           <hr/>
           <h3>Our Address</h3>
-          <p>{company.address}</p>
+          <p>{company.address.line1}<br>{company.address.city}, {company.address.state}, {company.address.zip5}</p>
         </div>
         <div class="phone">
           <hr/>
@@ -44,20 +37,13 @@
           <p>{company.phone}</p>
         </div>
       </div>
+
+      <a href={company.address.mapLink}><img src="/images/map.jpg" alt="Map showing Gold Bar Espresso Location"/></a>
     </div>
   </TwoColumnLayout>
-
-</section>
+</StandardPageLayout>
 
 <style>
-  section {
-    background-color: var(--primary-color);
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
   h2, h3 {
     color: var(--alternate-color);
   }
@@ -68,13 +54,20 @@
     line-height: 1.2em;
   }
 
-  .bg-color {
-    background: var(--primary-background-color);
-  }
-
   .email-form {
     display: flex;
     flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .address {
+    margin-right: 4em;
+    margin-bottom: 2em;
   }
 
   hr {

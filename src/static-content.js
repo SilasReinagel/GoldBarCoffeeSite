@@ -9,7 +9,7 @@ export default ({
     'Tempe',
     'AZ',
     '85282',
-    'https://www.google.com/maps?q=3141+S+McClintock+Dr,+Tempe,+AZ+85282&ie=UTF8&split=0&gl=us&ei=w4igSqfPD5HWtgOgqqiNDw&ll=33.394459,-111.907039&spn=0.003525,0.004823&t=h&z=18&iwloc=r5'
+    'http://mapq.st/2FMsDxP'
   ),
   social: {
     facebook: 'http://www.facebook.com/pages/Gold-Bar-Espresso/46920370784',
