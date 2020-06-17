@@ -13,17 +13,17 @@
     <div class="mobile-three-column-layout">
       <div class="column">
         <div class="img-box">
-          <img src="/images/people-in-cafe-01.jpg" alt="Happy customer at Gold Bar cash register" />
+          <img src="/images/people-in-cafe-01.jpg" alt="Happy customer at Gold Bar cash register" loading="lazy"/>
         </div>
         <h4>Rest, Relax & Revive!</h4>
         <p>At Gold Bar Espresso people from all around come to rest, relax, and revive with great coffee, great company, great music, and great food!</p>
         <p>We import our coffees exclusively from the most fertile and renowned coffee-growing regions on earth.
           Our estate-grown varietals are hand-selected by our Roast Master for their taste, balance and uniformity.</p>
-        <div class="icon-box"><img src="/icons/free-wifi.png" alt="Free Wifi"/></div>
+        <div class="icon-box"><img src="/icons/free-wifi.png" alt="Free Wifi" loading="lazy"/></div>
       </div>
       <div class="column">
         <div class="img-box">
-          <img src="/images/live-jazz-01.jpg" alt="Live jazz music" />
+          <img src="/images/live-jazz-01.jpg" alt="Live jazz music" loading="lazy"/>
         </div>
         <h4>Live Music Every Weekend!</h4>
         <p>Straight ahead, acoustic, the sounds of Miles, Coltrane, Monk, and so many more. Friday and Sunday nights begining at 7:30 PM.</p>

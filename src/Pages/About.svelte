@@ -8,7 +8,7 @@
 <StandardPageLayout title="About" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
   <TwoColumnLayout>
     <div class='center-vertically' slot='first'>
-      <img class="logo" src={company.logo} alt="{company.name} Logo" />
+      <img class="logo" src={company.logo} alt="{company.name} Logo"/>
     </div>
     <div slot='second'>
       <h1>{company.name}</h1>
@@ -22,13 +22,13 @@
 
       <div class="social-links">
         <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
-          <img src="/images/yelp.svg" alt="Yelp Icon"/>
+          <img src="/images/yelp.svg" alt="Yelp Icon" loading="lazy"/>
         </a>
         <a class="social-icon facebook-blue" href={company.social.facebook} target=”_blank”>
-          <img src="/images/facebook.svg" alt="Facebook Icon"/>
+          <img src="/images/facebook.svg" alt="Facebook Icon" loading="lazy"/>
         </a>
         <a class="social-icon twitter-blue" href={company.social.twitter} target=”_blank”>
-          <img src="/images/twitter.svg" alt="Twitter Icon"/>
+          <img src="/images/twitter.svg" alt="Twitter Icon" loading="lazy"/>
         </a>
       </div>
     </div>

@@ -9,13 +9,13 @@
 
   <div class="social-links">
     <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
-      <img src="/images/yelp.svg" alt="Yelp Icon"/>
+      <img src="/images/yelp.svg" alt="Yelp Icon" loading="lazy"/>
     </a>
     <a class="social-icon facebook-blue" href={company.social.facebook} target=”_blank”>
-      <img src="/images/facebook.svg" alt="Facebook Icon"/>
+      <img src="/images/facebook.svg" alt="Facebook Icon" loading="lazy"/>
     </a>
     <a class="social-icon twitter-blue" href={company.social.twitter} target=”_blank”>
-      <img src="/images/twitter.svg" alt="Twitter Icon"/>
+      <img src="/images/twitter.svg" alt="Twitter Icon" loading="lazy"/>
     </a>
   </div>
 

@@ -16,11 +16,13 @@
 @font-face {
   font-family: 'Zilla Slab';
   src: url('/fonts/ZillaSlab-Regular.ttf')  format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Open Sans';
   src: url('/fonts/OpenSans-Regular.ttf')  format('truetype');
+  font-display: swap;
 }
 
 html, body, a  {

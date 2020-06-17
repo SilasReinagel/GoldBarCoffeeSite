@@ -18,12 +18,12 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="/images/cafe-entrance-01.jpg"/></div>
-    <div class="swiper-slide"><img src="/images/live-jazz-01.jpg"/></div>
-    <div class="swiper-slide"><img src="/images/cafe-01.jpg"/></div>
-    <div class="swiper-slide"><img src="/images/people-in-cafe-01.jpg"/></div>
-    <div class="swiper-slide"><img src="/images/hours-sign.jpg"/></div>
-    <div class="swiper-slide"><img src="/images/cafe-03.jpg"/></div>
+    <div class="swiper-slide"><img src="/images/cafe-entrance-01.jpg" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/live-jazz-01.jpg" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/cafe-01.jpg" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/people-in-cafe-01.jpg" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/hours-sign.jpg" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/cafe-03.jpg" loading="lazy"/></div>
   </div>
   <div class="swiper-pagination"></div>
 </div>
