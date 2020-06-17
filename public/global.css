@@ -77,12 +77,12 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  html, body {
-    font-size: 14px;
+  html, body, a {
+    font-size: 13px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .highres,
