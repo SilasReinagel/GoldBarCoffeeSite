@@ -15,18 +15,13 @@
 </section>
 
 <style>
-  h4 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-  }
-
   h3 {
     font-size: 2em;
     margin-top: 0px;
   }
 
   .day {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #ddd;
     text-transform: uppercase;
     font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
@@ -34,14 +29,14 @@
   }
 
   .hours {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #ddd;
     font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
     letter-spacing: 0.05em;
   }
 
   section {
-    padding: 2.4em 1.8em 3em 1.8em;
+    padding: 2.4em 1.4em 3em 1.4em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -63,7 +58,7 @@
   .call {
     margin-top: 30px;
     margin-bottom: 12px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #c7a17a;
     text-transform: uppercase;
   }

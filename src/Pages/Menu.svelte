@@ -34,6 +34,7 @@
 <style>
   h2 {
     size: 2.4em;
+    margin-right: 1em;
   }
 
   h4 {
@@ -47,24 +48,6 @@
     width: 120px;
   }
 
-  section {
-    background-color: #151412;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .bg-color {
-    background-color: var(--primary-background-color);
-    padding: 1em;
-  }
-
-  .menu {
-    background-color: #f2f0ea;
-    min-height: 800px;
-  }
-
   h2, h4 {
     color: var(--alternate-color);
   }
@@ -76,4 +59,15 @@
     align-content: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      size: 1.8em;
+    }
+
+    h4 {
+      size: 1.0em;
+    }
+  }
+
 </style>

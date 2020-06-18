@@ -5,7 +5,7 @@
 </script>
 
 <footer>
-  <span>© {year} {company.name}</span>
+  <p>© {year} {company.name}</p>
 
   <div class="social-links">
     <a class="social-icon yelp-red" href={company.social.yelp} target=”_blank”>
@@ -19,14 +19,10 @@
     </a>
   </div>
 
-  <span class="small-text">Website by: <a href="http://www.silasreinagel.com">Silas Reinagel</a></span>
+  <p class="small-text">Website by: <a href="http://www.silasreinagel.com" class="small-text">Silas Reinagel</a></p>
 </footer>
 
 <style>
-  a {
-    font-size: 1em;
-  }
-
   footer {
     padding: 12px 18px;
     height: 5em;
@@ -36,15 +32,10 @@
     align-content: center;
     align-items: center;
     background-color: #000;
-    font-size: 0.8em;
   }
 
-  span {
-    font-size: 0.9em;
-  }
-
-  .small-text {
-    font-size: 0.7em;
+  a {
+    font-size: 1em;
   }
 
   .social-links {

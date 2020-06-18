@@ -8,6 +8,10 @@
 <div class="icon-box"><img src="/icons/free-wifi.png" alt="Free Wifi" loading="lazy"/></div>
 
 <style>
+  h4 {
+    font-size: 1.4em;
+  }
+
   .img-box {
     border: 2px #fff solid;
   }
