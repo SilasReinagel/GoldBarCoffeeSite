@@ -5,7 +5,7 @@
   import company from '../static-content';
 </script>
 
-<StandardPageLayout title="About" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
+<StandardPageLayout title="About Us" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
   <TwoColumnLayout>
     <div class='center-vertically' slot='first'>
       <img class="logo" src={company.logo} alt="{company.name} Logo"/>

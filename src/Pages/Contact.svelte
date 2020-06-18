@@ -5,7 +5,7 @@
   import company from '../static-content';
 </script>
 
-<StandardPageLayout title="Contact" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
+<StandardPageLayout title="Contact Us" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
   <TwoColumnLayout>
     <form class="email-form" name="contact" form-name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" slot='first'>
       <h2>Contact Us</h2>
@@ -16,6 +16,7 @@
           <input name="bot-field" />
         </label>
       </div>
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" placeholder="Your Name"/>
       <input type="email" name="email" placeholder="Your Email"/>
       <textarea name="message" placeholder="Your Message"/>
