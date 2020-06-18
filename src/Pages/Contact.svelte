@@ -7,7 +7,7 @@
 
 <StandardPageLayout title="Contact" headerImg="/images/cafe-01.jpg" headerImgAlt="Cafe">
   <TwoColumnLayout>
-    <form class="email-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" slot='first'>
+    <form class="email-form" name="contact" form-name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" slot='first'>
       <h2>Contact Us</h2>
       <hr/>
       <div hidden aria-hidden="true">
