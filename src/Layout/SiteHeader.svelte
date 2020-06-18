@@ -46,6 +46,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition-duration: 0.2s;
+    filter: brightness(0) saturate(100%) invert(100%)
   }
 
   .navlink:hover {

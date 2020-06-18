@@ -22,7 +22,7 @@
 <style>
   h1 {
     margin: 0;
-    font-size: 2.6em;
+    font-size: 2.2em;
   }
 
   .align-right {

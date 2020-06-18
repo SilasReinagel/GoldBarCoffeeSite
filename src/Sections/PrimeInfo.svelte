@@ -5,21 +5,15 @@
   import DividerWithText from '../Elements/DividerWithText.svelte';
   import Container from '../Elements/Container.svelte';
   import Hours from './Hours.svelte';
+  import CafeBrandStatement from './CafeBrandStatement.svelte';
 </script>
 
-<section id='prime-info'>
+<section id="prime-info">
   <DividerWithText text={company} />
   <Container>
     <div class="mobile-three-column-layout">
       <div class="column">
-        <div class="img-box">
-          <img src="/images/people-in-cafe-01.jpg" alt="Happy customer at Gold Bar cash register" loading="lazy"/>
-        </div>
-        <h4>Rest, Relax & Revive!</h4>
-        <p>At Gold Bar Espresso people from all around come to rest, relax, and revive with great coffee, great company, great music, and great food!</p>
-        <p>We import our coffees exclusively from the most fertile and renowned coffee-growing regions on earth.
-          Our estate-grown varietals are hand-selected by our Roast Master for their taste, balance and uniformity.</p>
-        <div class="icon-box"><img src="/icons/free-wifi.png" alt="Free Wifi" loading="lazy"/></div>
+        <CafeBrandStatement/>
       </div>
       <div class="column">
         <div class="img-box">
