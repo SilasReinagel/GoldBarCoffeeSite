@@ -5,19 +5,19 @@ const randomString = (len, charSet) => {
   charSet = charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   var randomString = '';
   for (var i = 0; i < len; i++) {
-      var randomPoz = Math.floor(Math.random() * charSet.length);
-      randomString += charSet.substring(randomPoz,randomPoz+1);
+      var char = Math.floor(Math.random() * charSet.length);
+      randomString += charSet.substring(char, char + 1);
   }
   return randomString;
 };
 
-const hash = randomString(8);
+const hash = randomString(12);
 fs.renameSync('public/build/bundle.[hash].css', `public/build/bundle.${hash}.css`, e => { if ( e ) console.error('Error: ' + e); });
 fs.renameSync('public/build/bundle.[hash].js', `public/build/bundle.${hash}.js`, e => { if ( e ) console.error('Error: ' + e); });
 
 const options = {
   files: 'public/index.html',
-  from: '[hash]',
+  from: /\[hash\]/g,
   to: hash,
 };
 
