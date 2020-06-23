@@ -2,6 +2,7 @@
   export let company;
 
   import Container from '../Elements/Container.svelte';
+  import Image from 'svelte-image';
 </script>
 
 <section>
@@ -16,12 +17,12 @@
           <br>Map: <a href={company.address.mapLink}>MapQuest</a></p>
         <hr/>
         <div class="logo-box">
-          <img src={company.logo} alt="{company.name} Logo" />
+          <Image src={company.logo} alt="{company.name} Logo" />
         </div>
       </div>
       <div class="column vertical">
         <h2>Social & Web</h2>
-        <a href={company.social.yelp}><img class="yelp" src="/images/yelp-rectangle.png" alt="Yelp Icon"/></a>
+        <a href={company.social.yelp}><img class="yelp" src="../images/yelp-rectangle.png" alt="Yelp Icon"/></a>
         <div>
           <a href={company.social.facebook}><img class="facebook" src="/icons/facebook-square.svg" alt="Facebook Icon"/></a>
           <a href={company.social.twitter}><img class="twitter" src="/icons/twitter-square.svg" alt="Twitter Icon"/></a>

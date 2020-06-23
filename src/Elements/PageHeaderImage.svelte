@@ -1,10 +1,12 @@
 <script>
   export let src;
   export let alt;
+  
+  import Image from "svelte-image";
 </script>
 
 <div>
-  <img src={src} alt={alt}/>
+  <Image src={src} alt={alt} lazy="false"/>
 </div>
 
 <style>
@@ -13,5 +15,6 @@
     height: 16em;
     overflow: hidden;
     vertical-align: middle;
+    background-color: #7d605a;
   }
 </style>

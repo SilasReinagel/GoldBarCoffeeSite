@@ -4,6 +4,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import serve from "rollup-plugin-serve";
+import copy from "rollup-plugin-copy";
+import image from "svelte-image";
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -19,16 +22,24 @@ export default {
 
 		svelte({
 			dev: !production,
+			preprocess: {
+				...image(),
+			},
 			css: css => {
 				css.write("public/build/bundle.[hash].css", !production);
-			}
+			},
 		}),
 
 		resolve({
 			browser: true,
 			dedupe: ['svelte']
 		}),
+
 		commonjs(),
+
+		copy({
+      targets: [{ src: 'static/g', dest: 'public' }],
+    }),
 
 		!production && serve({
 			contentBase: ["public"],

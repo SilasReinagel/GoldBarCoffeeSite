@@ -11,6 +11,7 @@
 
 <style>
   .hero-image {
+    background-color: #647163;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-01.jpg");
 
     min-height: 80vh;
