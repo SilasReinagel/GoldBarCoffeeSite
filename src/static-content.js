@@ -3,7 +3,7 @@ const address = (line1, city, state, zip5, mapLink) => ({ line1, city, state, zi
 export default ({
   name: 'Gold Bar Espresso',
   phone: '+1 480 839 3082',
-  logo: '../images/gblogo.png',
+  logo: './images/gblogo.png',
   address: address(
     '3141 S McClintock Dr',
     'Tempe',

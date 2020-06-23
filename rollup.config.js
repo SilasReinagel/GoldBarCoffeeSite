@@ -7,7 +7,6 @@ import serve from "rollup-plugin-serve";
 import copy from "rollup-plugin-copy";
 import image from "svelte-image";
 
-
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -16,7 +15,8 @@ export default {
 		sourcemap: !production,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.[hash].js'
+		file: 'public/build/bundle.[hash].js',
+		globals: [ 'svelte-image' ]
 	},
 	plugins: [
 

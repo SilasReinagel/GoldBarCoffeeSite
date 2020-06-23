@@ -1,7 +1,7 @@
 <script>
   export let src;
   export let alt;
-  
+
   import Image from "svelte-image";
 </script>
 
