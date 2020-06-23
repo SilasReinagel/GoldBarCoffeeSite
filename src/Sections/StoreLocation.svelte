@@ -19,7 +19,7 @@
 </div>
 
 <style>
-  .img-box {
+  img {
     border: 2px #fff solid;
   }
 

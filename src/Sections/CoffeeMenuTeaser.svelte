@@ -9,7 +9,7 @@
 <a href="./index.html?page=menu">See Our Menu</a>
 
 <style>
-  .img-box {
+  img {
     border: 2px #fff solid;
   }
 

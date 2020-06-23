@@ -8,7 +8,7 @@
 <p>Every Saturday Night we host Game Night. We have numerous games, from cards to board games, at Gold Bar. Or you could bring your own along with some friends to enjoy them with.</p>
 
 <style>
-  .img-box {
+  img {
     border: 2px #fff solid;
   }
 

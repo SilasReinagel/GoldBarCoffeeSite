@@ -8,7 +8,7 @@
   Just the ticket for meditative thoughts, writing, or chilling out! Join Scott from 9-11 AM.</p>
 
 <style>
-  .img-box {
+  img {
     border: 2px #fff solid;
   }
 

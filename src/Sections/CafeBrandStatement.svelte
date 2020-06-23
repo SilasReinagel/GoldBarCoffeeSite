@@ -12,7 +12,7 @@
     font-size: 1.4em;
   }
 
-  .img-box {
+  img {
     border: 2px #fff solid;
   }
 
