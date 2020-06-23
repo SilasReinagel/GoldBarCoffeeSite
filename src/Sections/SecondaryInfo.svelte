@@ -1,10 +1,7 @@
 <script>
-  export let phone;
-
   import ThreeColumnLayout from '../Elements/ThreeColumnLayout.svelte';
   import CoffeeMenuTeaser from '../Sections/CoffeeMenuTeaser.svelte';
-  import Hours from './Hours.svelte';
-  import CafeBrandStatement from './CafeBrandStatement.svelte';
+  import GameNight from '../Sections/GameNight.svelte';
   import LiveJazz from './LiveJazz.svelte';
 </script>
 
@@ -12,7 +9,7 @@
   <ThreeColumnLayout>
     <div slot="first"><CoffeeMenuTeaser/></div>
     <div slot="second"><LiveJazz/></div>
-    <div slot="third"><Hours phone={phone}/></div>
+    <div slot="third"><GameNight/></div>
   </ThreeColumnLayout>
 </section>
 
