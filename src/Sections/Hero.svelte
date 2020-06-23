@@ -39,4 +39,10 @@
     color: #ccc;
     font-size: 1.2em;
   }
+
+  @media screen and (max-width: 600px) {
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-01-tall-sm.jpg");
+    }
+  }
 </style>
