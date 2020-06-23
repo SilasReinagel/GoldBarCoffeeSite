@@ -1,12 +1,10 @@
 <script>
   export let src;
   export let alt;
-
-  import Image from "svelte-image";
 </script>
 
 <div>
-  <Image src={src} alt={alt} lazy="false"/>
+  <img src={src} alt={alt} lazy="false"/>
 </div>
 
 <style>

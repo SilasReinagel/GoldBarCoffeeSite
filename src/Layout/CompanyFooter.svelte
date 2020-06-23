@@ -2,7 +2,6 @@
   export let company;
 
   import Container from '../Elements/Container.svelte';
-  import Image from 'svelte-image';
 </script>
 
 <section>
@@ -17,7 +16,7 @@
           <br>Map: <a href={company.address.mapLink}>MapQuest</a></p>
         <hr/>
         <div class="logo-box">
-          <Image src={company.logo} alt="{company.name} Logo" />
+          <img src={company.logo} alt="{company.name} Logo" />
         </div>
       </div>
       <div class="column vertical">
