@@ -12,11 +12,11 @@ const randomString = (len, charSet) => {
 };
 
 const hash = randomString(12);
-fs.renameSync('public/build/bundle.[hash].css', `public/build/bundle.${hash}.css`, e => { if ( e ) console.error('Error: ' + e); });
-fs.renameSync('public/build/bundle.[hash].js', `public/build/bundle.${hash}.js`, e => { if ( e ) console.error('Error: ' + e); });
+fs.renameSync('public/build/bundle.[hash].css', `./public/build/bundle.${hash}.css`, e => { if ( e ) console.error('Error: ' + e); });
+fs.renameSync('public/build/bundle.[hash].js', `./public/build/bundle.${hash}.js`, e => { if ( e ) console.error('Error: ' + e); });
 
 const options = {
-  files: 'public/index.html',
+  files: './public/index.html',
   from: /\[hash\]/g,
   to: hash,
 };
