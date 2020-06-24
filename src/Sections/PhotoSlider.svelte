@@ -1,4 +1,5 @@
 <svelte:head>
+	<link rel="preload" href="/swiper/swiper.min.js" as="script" crossorigin>
 	<link rel="stylesheet" href="/swiper/swiper.min.css">
 	<script defer src="/swiper/swiper.min.js" on:load={initSlider}></script>
 </svelte:head>
@@ -25,7 +26,7 @@
     <div class="swiper-slide"><img src="/images/cafe-06.jpg" alt="Cafe Pic"loading="lazy"/></div>
     <div class="swiper-slide"><img src="/images/live-jazz-03.jpg" alt="Cafe Pic" loading="lazy"/></div>
     <div class="swiper-slide"><img src="/images/cafe-01.jpg"alt="Cafe Pic" loading="lazy"/></div>
-    <div class="swiper-slide"><img src="/images/cafe-03.jpg" alt="Cafe Pic" loading="lazy"/></div>
+    <div class="swiper-slide"><img src="/images/cafe-03-md.jpg" alt="Cafe Pic" loading="lazy"/></div>
     <div class="swiper-slide"><img src="/images/hours-sign.jpg" alt="Cafe Pic"loading="lazy"/></div>
   </div>
   <div class="swiper-pagination"></div>
