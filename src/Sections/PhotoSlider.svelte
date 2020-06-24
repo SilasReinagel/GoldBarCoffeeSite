@@ -1,5 +1,5 @@
 <svelte:head>
-	<link rel="preload" href="/swiper/swiper.min.js" as="script" crossorigin>
+	<link rel="preload" href="/swiper/swiper.min.css" as="stylesheet" crossorigin>
 	<link rel="stylesheet" href="/swiper/swiper.min.css">
 	<script defer src="/swiper/swiper.min.js" on:load={initSlider}></script>
 </svelte:head>
